@@ -1,0 +1,469 @@
+*, ::before, ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: sans-serif;
+    background: url(./images/poduct\ bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sec1{
+    width: 100%;
+}
+
+.sec1 .container{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.sec1 .container header{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sec1 .container header .left h2{
+    font-size: 35px;
+    letter-spacing: 2px;
+}
+
+.sec1 .container header span{
+    color: rgb(150, 100, 197);
+}
+
+.sec1 .container header input{
+    border-radius: 40px;
+    padding: 1rem;
+    outline: none;
+    border: none;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.3);
+}
+
+.sec1 .container .hero{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 3.25rem 0;
+}
+
+.sec1 .container .hero .left img{
+    width: 500px;
+}
+
+
+.sec1 .container .hero .right h1{
+    font-size: 60px;
+    margin-bottom: 2.2rem;
+}
+
+.sec1 .container .hero .right .space{
+    letter-spacing: 20px;
+}
+
+.sec1 .container .hero .right .color{
+    color: rgb(150, 100, 197);
+}
+
+.sec1 .container .hero .right button{
+    padding: 1rem;
+    background: #333;
+    color: white;
+    border-radius: 25px;
+    width: 150px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+
+@media screen and (max-width: 1000px){
+    .sec1 .container{
+        width: 100%;
+    }
+    
+    .sec1 .container .hero{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .sec1 .container .hero .left{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 2.25rem;
+    }
+
+    .sec1 .container .hero .left img{
+        width: 90%;
+    }
+
+    .sec1 .container .hero .right{
+        width: 100%;
+        text-align: center;
+    }
+
+    .sec1 .container .hero .right .space{
+        letter-spacing: 0px;
+    }
+
+    .sec1 .container .hero .right h1{
+        font-size: 50px;
+    }
+
+}
+
+
+@media screen and (max-width: 500px){
+    .sec1 .container header input{
+        display: none;
+    }
+
+    .sec1 .container .hero .right h1{
+        font-size: 30px;
+    }
+}
+
+
+/* Section 2 */
+
+.sec2{
+    width: 100%;
+    padding: 5.25rem 7%;
+}
+
+.sec2 .container{
+    max-width: 1150px;
+    margin: 0 auto;
+    border: 1px solid white;
+    background: white;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    padding: 1.25rem 10px;
+}
+
+.sec2 .container .title{
+    text-align: center;
+}
+
+.sec2 .container .title h1{
+    font-size: 35px;
+    color: rgb(192, 120, 192);
+}
+
+.sec2 .container .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 2.25rem;
+}
+
+.sec2 .container .content .card{
+    width: 17rem;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    background: white;
+    margin: 20px;
+    position: relative;
+    padding: 1.25rem 0 3.25rem 0;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+h4{
+    margin: 1rem 0;
+    color: rgb(155, 155, 155);
+}
+
+.price{
+    font-size: 22px;
+    color: #333;
+}
+
+.card button{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    bottom: -47px;
+    padding: 1rem;
+    width: 50%;
+    border-radius: 30px;
+    color: white;
+    background: purple;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    display: none;
+    transition: all 0.2s;
+}
+
+.card:hover{
+    transform: translateY(-10px);
+    transition: all 0.2s ease-in-out;
+}
+
+.card:hover button{
+    display: block;
+    transition: all 0.2s ease-in-out;
+}
+
+
+@media screen and (max-width: 400px){
+    .sec2 .container {
+        width: 100%;
+    }
+
+    .sec2 .container .content .card{
+        width: 100%;
+    }
+
+    .sec2 .container .content .card img{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .sec2 .container{
+        padding: 0;
+    }
+
+    .sec2{
+        padding: 0;
+    }
+}
+
+
+/* Section 3 */
+
+.sec3{
+    width: 100%;
+    padding: 5.25rem 0;
+}
+
+.sec3 .container{
+    max-width: 1150px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.sec3 .container .left{
+    width: 550px;
+}
+
+.sec3 .container .left h1{
+    font-size: 55px;
+}
+
+.sec3 .container .left h2{
+    font-size: 35px;
+    margin: 1rem 0;
+}
+
+.sec3 .container .left h2 span{
+    color: rgb(156, 97, 212);
+}
+
+.sec3 .container .left p{
+    font-size: 19px;
+    color: rgb(156, 156, 156);
+}
+
+.sec3 .container .right img{
+    width: 450px;
+}
+
+
+@media screen and (max-width: 1000px){
+    .sec3 .container{
+        flex-direction: column;
+    }
+
+    .sec3 .container .right{
+        width: 90%;
+        text-align: center;
+        margin-top: 2.25rem;
+    }
+
+    .sec3 .container .right img{
+        width: 70%;
+    }
+
+    .sec3 .container .left {
+        width: 90%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .sec3 .container .right img{
+        width: 90%;
+    }
+
+    .sec3 .container .left {
+        width: 100%;
+    }
+
+    .sec3 .container .left h1{
+        font-size: 45px;
+    }
+
+    .sec3 .container .left h2{
+        font-size: 25px;
+    }
+
+    .sec3 .container .left p{
+        font-size: 16px;
+    }
+}
+
+/* Section 4 */
+
+.sec4{
+    width: 100%;
+    padding: 5.25rem 0;
+}
+
+.sec4 .container{
+    max-width: 1150px;
+    margin: 0 auto;
+    background: white;
+    border: 1px solid white;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    padding: 1.25rem 0;
+}
+
+.sec4 .container .title{
+    text-align: center;
+}
+
+.sec4 .container .title h1{
+    font-size: 35px;
+    color: rgb(192, 120, 192);
+}
+
+.sec4 .container .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2em;
+    flex-wrap: wrap;
+}
+
+.sec4 .container .content .card{
+    width: 17rem;
+    border: 1px solid white;
+    background: white;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    padding: 1.25rem 0 3.25rem 0;
+    margin: 20px;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+}
+
+
+@media screen and (max-width: 1000px){
+    .sec4 .container .content{
+        justify-content: center;
+    }
+}
+
+/* Section  5 */
+
+.sub{
+    width: 100%;
+    padding: 5.25rem 0;
+}
+
+.sub .container{
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub .container h1{
+    margin-bottom: 1em;
+    color: #333;
+    font-size: 30px;
+}
+
+.sub .container input{
+    width: 80%;
+    height: 50px;
+    border-radius: 30px;
+    padding: 0 1em;
+    color: #333;
+    font-size: 16px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    border: none;
+    outline: none;
+    position: relative;
+}
+
+footer{
+    width: 100%;
+    padding-top: 2em;
+    text-align: center;
+}
+
+footer .separateur{
+    width: 100%;
+    height: 2px;
+    background-color: #9e9e9e;
+}
+
+footer .logo{
+    font-size: 30px;
+    margin: 4rem 0 1.25rem 0;
+    font-weight: 700;
+}
+
+footer .contenu{
+    display: flex;
+    background: white;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    width: 600px;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem auto;
+    border-radius: 15px;
+    transition: all 0.2s;
+    flex-wrap: wrap;
+}
+
+footer .contenu a{
+    color: #333;
+    padding: 1rem 2rem;
+}
+
+footer .contenu a:hover{
+    background: #333;
+    color: white;
+    border-radius: 10px;
+    transition: all 0.1s;
+}
+
+@media screen and (max-width: 700px){
+    footer .contenu{
+        width: 90%;
+    }
+
+    footer .contenu a{
+        padding: 1rem;
+    }
+}
